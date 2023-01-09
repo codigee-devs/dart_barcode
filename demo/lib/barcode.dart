@@ -68,7 +68,6 @@ class BarcodeView extends StatelessWidget {
                   ),
                 ),
               ),
-              Download(conf: conf),
             ],
           ),
         ),

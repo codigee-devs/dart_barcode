@@ -22,9 +22,11 @@ import 'barcode_info.dart';
 import 'code.dart';
 import 'settings.dart';
 
-void main() => runApp(_MyApp());
+void main() => runApp(MyApp());
 
-class _MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  MyApp({Key? key}) : super(key: key);
+
   final BarcodeConf conf = BarcodeConf();
 
   @override
@@ -81,7 +83,6 @@ class _HomeState extends State<_Home> {
                   Settings(conf: conf),
                   BarcodeView(conf: conf),
                   BarcodeInfo(conf: conf),
-                  Code(conf: conf),
                 ],
               )
             : Row(
@@ -91,7 +92,6 @@ class _HomeState extends State<_Home> {
                     child: Column(
                       children: [
                         Settings(conf: conf),
-                        Code(conf: conf),
                       ],
                     ),
                   ),

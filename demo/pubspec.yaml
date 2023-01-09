@@ -1,5 +1,5 @@
-name: example
-description: BarcodeWidget example
+name: barcode_demo
+description: Barcode Demo
 version: 1.0.0+1
 publish_to: none
 
